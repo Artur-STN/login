@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    text-decoration: none;
+
+}
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to top right, #C33753, #D94856, #F15A5A);
+
+    min-height: 100vh;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-shadow: 5px 5px 5px black;
+
+    width: 60vw;
+
+}
+
+.container .esquerda,
+.container .direita {
+
+    height: 60vh;
+
+}
+
+.container .esquerda {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(to top, #F0595A, #BD3252);
+    
+    width: 20vw;
+
+}
+
+.container .esquerda p {
+
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: bold;
+    
+    color: white;
+    
+}
+
+.container .esquerda p::before {
+
+    content: '';
+
+    position: absolute;
+    
+    background: white;
+
+    width: 50px;
+    height: 2px;
+
+}
+
+.container .direita {
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    background: #E0E0E0;
+
+    width: 40vw;
+
+    padding: 5rem 2rem;
+
+}
+
+.container .direita .box p {
+    
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+    color: #BD3252;
+
+}
+
+.container input {
+
+    background: transparent;
+    color: #C33753;
+    
+    font-size: 1.2rem;
+
+    border: 0;
+    border-bottom: 1px solid #BD3252;
+
+    width: 80%;
+
+    margin: 0 0 1rem 0;
+
+}
+
+.container .direita input::placeholder {
+
+    color: #BD3252C5;
+
+}
+
+.container .direita .box {
+
+    width: 100%;
+
+}
+
+.container .direita .box.password p.changePassword,
+.container .direita .box.password p.changePassword a {
+
+    color: #BD3252;
+
+    font-size: 1rem;
+
+    transition: 0.2s;
+    
+}
+
+.container .direita .box.password p.changePassword a:hover {
+    
+    text-decoration: underline #C33753;
+
+}
+
+.container .direita button {
+
+    background: #D74656;
+    color: white;
+    
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    border: 0;
+
+    width: 90px;
+    
+    padding: 0.5rem 0;
+
+    transition: 0.2s;
+    
+    cursor: pointer;
+
+    margin-top: 1rem;
+
+}
+
+.container .direita button:hover {
+
+    background: #BD3252;
+    
+    transform: scale(1.1);
+    
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px #BD3252;
+
+}
+
+@media (max-width: 1080px) {
+
+    .container {
+    
+        width: 80vw;
+    
+    }
+    
+    .container .esquerda {
+    
+        width: 30vw;
+    
+    }
+    
+    .container .direita {
+    
+        width: 50vw;
+    
+    }
+
+}
+
+@media (max-width: 720px) {
+
+    .container {
+
+        align-items: center;
+    
+        flex-direction: column;
+        
+        width: 90vw;
+    
+    }
+    
+    .container .esquerda {
+    
+        width: 100%;
+        height: 30vw;
+
+        padding: 1rem 0;
+    
+    }
+
+    .container .esquerda p {
+        
+        letter-spacing: 8px;
+
+    }
+
+    .container .esquerda p::before {
+
+        width: 50%;
+
+    }
+
+    .container input {
+    
+        width: 100%;
+    
+    }
+    
+    .container .direita {
+    
+        width: 100%;
+
+        padding: 1rem;
+    
+    }
+
+    .container .direita button {
+        
+        width: 70%;
+        
+        margin: 0 auto;
+
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    .container {
+    
+        flex-direction: column;
+        
+        width: 100vw;
+    
+    }
+
+}
