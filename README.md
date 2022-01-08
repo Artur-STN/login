@@ -1,3 +1,3 @@
 ## LOGIN
 
-link -> artur-stn.github.io/login
+link -> https://artur-stn.github.io/login
